@@ -43,11 +43,11 @@
             <ul class="row">
                 <?php foreach ( $bakers->get_all() as $theBaker ): ?>
                 <li class="span4 the-baker">
-                    <h4 class="baked-by a-area-b">
-                        <a href="<?php echo $theBaker->profile_url; ?>" title="Thoughts - <?php echo $theBaker->name; ?>"><?php echo $theBaker->name; ?></a>
+                    <h4 class="baked-by a-area-b h-card vcard">
+                        <a class="u-url url p-name fn" href="<?php echo $theBaker->profile_url; ?>" title="Thoughts - <?php echo $theBaker->name; ?>"><?php echo $theBaker->name; ?></a>
                     </h4> 
                     <p>
-                        <img src="<?php echo $theBaker->portrait_small_url; ?>" alt="<?php echo $theBaker->portrait_alt; ?>" class="portrait-small">
+                        <img class="u-photo photo" src="<?php echo $theBaker->portrait_small_url; ?>" alt="<?php echo $theBaker->portrait_alt; ?>" class="portrait-small">
                     </p>
                 </li>
                 <?php endforeach; ?>
